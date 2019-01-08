@@ -9,7 +9,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 
-data_path = '../simple_regression/data/Salary_Data.csv'
+data_path = '../data/Salary_Data.csv'
 
 dataset = pd.read_csv(data_path)
 X = dataset.iloc[:, :-1].values

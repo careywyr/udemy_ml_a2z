@@ -10,6 +10,7 @@ Created on Fri Dec 14 16:14:20 2018
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
 data_path = '../data/Data.csv'
 
@@ -26,7 +27,7 @@ X[:, 1:3] = imputer.transform(X[:, 1:3])
 
 # Encoding categorical data
 # Encoding the Independent Variable
-from sklearn.preprocessing import LabelEncoder, OneHotEncoder
+
 labelencoder_X = LabelEncoder()
 X[:, 0] = labelencoder_X.fit_transform(X[:, 0])
 onehotencoder = OneHotEncoder(categorical_features = [0])
