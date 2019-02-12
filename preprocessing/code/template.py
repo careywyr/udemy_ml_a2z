@@ -14,10 +14,10 @@ from sklearn.preprocessing import LabelEncoder, OneHotEncoder
 
 data_path = '../data/Data.csv'
 
-#import the dataset
+# import the dataset
 dataset = pd.read_csv(data_path)
-X = dataset.iloc[:,:-1].values
-y = dataset.iloc[:,3].values
+X = dataset.iloc[:, :-1].values
+y = dataset.iloc[:, 3].values
 
 # Taking care of missing data
 from sklearn.preprocessing import Imputer
