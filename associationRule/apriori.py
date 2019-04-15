@@ -5,7 +5,7 @@
 @author  : carey
 """
 
-from .apyori import apriori
+from apyori import apriori
 import pandas as pd
 
 dataset = pd.read_csv('Market_Basket_Optimisation.csv', header=None)
